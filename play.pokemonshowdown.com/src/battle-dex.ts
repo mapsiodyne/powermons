@@ -673,6 +673,20 @@ const Dex = new class implements ModdedDex {
 			spriteData.h *= 1.5;
 			spriteData.y += -11;
 		}
+		
+		if (spriteData.isFrontSprite) {
+			if(name == 'ghojo') {
+				spriteData.url = '../../sprites/power'+name+'front.png';
+				return spriteData;
+			}
+		}
+		else{
+			if(name == 'ghojo') {
+				spriteData.url = '../../sprites/power'+name+'back.png';
+				return spriteData;
+			}
+		}
+
 
 		return spriteData;
 	}
@@ -787,6 +801,9 @@ const Dex = new class implements ModdedDex {
 		else if (gen <= 4 && species.gen <= 4) spriteData.spriteDir = 'sprites/gen4';
 		spriteData.x = 10;
 		spriteData.y = 5;
+			if (id === 'ghojo') {
+			spriteData.spriteDir = 'power/';
+		}
 		return spriteData;
 	}
 
