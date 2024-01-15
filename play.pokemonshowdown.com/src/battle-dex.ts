@@ -676,13 +676,13 @@ const Dex = new class implements ModdedDex {
 		
 		if (spriteData.isFrontSprite) {
 			if(name == 'ghojo') {
-				spriteData.url = '../../sprites/power'+name+'front.png';
+				spriteData.url = 'https://raw.githubusercontent.com/mapsiodyne/powermons/master/play.pokemonshowdown.com/power/GHOJO.png';
 				return spriteData;
 			}
 		}
 		else{
 			if(name == 'ghojo') {
-				spriteData.url = '../../sprites/power'+name+'back.png';
+				spriteData.url = 'https://raw.githubusercontent.com/mapsiodyne/powermons/master/play.pokemonshowdown.com/power/GHOJO.png';
 				return spriteData;
 			}
 		}
